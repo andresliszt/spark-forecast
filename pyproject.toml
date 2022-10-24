@@ -1,0 +1,42 @@
+[tool.poetry]
+name ="spark_forecast"
+version = "0.1.0"
+description = "Transverse forecast spark"
+authors = ["Andrés Sandoval <andres.sandoval@alumnos.usm.cl>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+structlog = "20.2.0"
+python-dotenv = "0.15.0"
+pydantic = "1.7.3"
+pyspark = "3.2.1"
+scipy = "1.8.1"
+darts = "0.21.0"
+pandas = "1.4.3"
+scikit-learn = "1.1.1"
+pyarrow = "9.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+autopep8 = "^1.5.4"
+docformatter = "^1.4"
+pylint = "^2.6.0"
+flake8 = "3.8.4"
+mypy = "^0.800"
+isort = "^5.7.0"
+bandit = "1.7.0"
+black = "22.3.0"
+sphinx-pydantic = "^0.1.1"
+sphinx-autodoc-typehints = "^1.12.0"
+seed-intersphinx-mapping = "^0.5.1"
+pre-commit = "^2.19.0"
+
+[tool.black]
+line-length = 79
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
